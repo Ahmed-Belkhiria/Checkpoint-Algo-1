@@ -1,0 +1,24 @@
+ALGORITHM Checkpoint_Algo_1
+VAR
+    Vowelcount, Wordcount, caracter_count: INTEGER ;
+    j: INTEGER //phrase count
+    Myst: STRING
+
+    BEGIN
+    Write("Insert phrase")
+    Read(str)
+    str:= str.lowercase();
+    Wordcount=1
+
+    FOR j FROM 0 TO str.length STEP step DO
+    caracter_count++;
+    END_IF
+
+    IF (str[i]=="a" or str[i]=="e" or str[i]=="i" or str[i]=="o" or str[i]=="u") THEN
+    Vowelcount++;
+    END_IF
+    END_FOR
+    Write(Vowelcount)
+    Write(Wordcount)
+    Write(caracter_count)
+    END
